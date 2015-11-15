@@ -1,0 +1,28 @@
+	<footer class="footer">
+		<nav>
+			<ol>
+				<li class="{{#when tab '===' 'home'}}active{{/when}}">
+					<a href="/" class="lnk-block">
+						<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+						<span>首页</span>
+					</a>
+				</li>
+				<li class="{{#when tab '===' 'create'}}active{{/when}}">
+					<a href="/create" class="lnk-block">
+						<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+						<span>放飞梦想</span>
+					</a>
+				</li>
+				<li class="{{#when tab '===' 'detail'}}active{{/when}}">
+					<a href="/mine" class="lnk-block">
+						<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+						<span>我的空间</span>
+					</a>
+				</li>
+			</ol>
+		</nav>
+	</footer>
+	<script src="{{staticRoot}}/js/common.js"></script>
+	<script src="{{staticRoot}}{{script}}"></script>
+</body>
+</html>

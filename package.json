@@ -1,0 +1,44 @@
+{
+  "name": "doDream",
+  "version": "1.0.0",
+  "description": "doDream",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_APP_INSTANCE=development ./node_modules/.bin/pm2-dev pm2.json",
+    "test": "NODE_APP_INSTANCE=development ./node_modules/.bin/pm2-dev ./test/restApi.js"
+  },
+  "author": "Jason Deng",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "5.8.23",
+    "charenc": "0.0.1",
+    "co": "^4.6.0",
+    "co-busboy": "^1.3.1",
+    "co-request": "^1.0.0",
+    "config": "1.16.0",
+    "crypt": "0.0.1",
+    "handlebars": "^4.0.4",
+    "is-buffer": "^1.1.0",
+    "js-yaml": "3.4.3",
+    "jsonwebtoken": "5.4.0",
+    "koa": "1.1.0",
+    "koa-body": "^1.3.0",
+    "koa-bodyparser": "2.0.1",
+    "koa-compress": "1.0.8",
+    "koa-hbs": "0.7.0",
+    "koa-json": "1.1.1",
+    "koa-logger": "1.3.0",
+    "koa-onerror": "1.2.1",
+    "koa-router": "5.2.3",
+    "koa-session": "^3.3.1",
+    "koa-static": "^1.5.1",
+    "mysql": "2.9.0",
+    "node-xlsx": "^0.6.0",
+    "request": "^2.65.0",
+    "require-dir": "0.3.0",
+    "sequelize": "3.12.1"
+  },
+  "devDependencies": {
+    "pm2": "0.15.7"
+  }
+}

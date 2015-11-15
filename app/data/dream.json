@@ -1,0 +1,37 @@
+[{
+	"img": "/img/example/item1.jpg",
+	"title": "坚持跑步30天",
+	"startWith": "200",
+	"user": {
+		"avatar": "/img/example/avatar.jpg"
+	},
+	"success": "请吃饭",
+	"fail": "发红包",
+	"done": 10,
+	"all": 30,
+	"supervision": 15
+},{
+	"img": "/img/example/item2.jpg",
+	"title": "拍照10天",
+	"startWith": "99",
+	"user": {
+		"avatar": "/img/example/avatar.jpg"
+	},
+	"success": "免费照片冲印",
+	"fail": "发红包",
+	"done": 2,
+	"all": 10,
+	"supervision": 4
+},{
+	"img": "/img/example/item3.jpg",
+	"title": "每天1万步",
+	"startWith": "10",
+	"user": {
+		"avatar": "/img/example/avatar.jpg"
+	},
+	"success": "请吃饭",
+	"fail": "发红包",
+	"done": 66,
+	"all": 100,
+	"supervision": 23
+}]

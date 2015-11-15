@@ -1,0 +1,15 @@
+{
+  "apps": [{
+    "name": "doDream",
+    "script": "app.js",
+    "args": [],
+    "watch": ["app", "app.js", "package.json"],
+    "ignore-watch": ["node_modules", "static"],
+    "node_args": "--harmony",
+    "merge_logs": true,
+    "cwd": "",
+    "env": {
+      "NODE_ENV": "development"
+    }
+  }]
+}

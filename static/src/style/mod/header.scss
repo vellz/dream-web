@@ -1,0 +1,24 @@
+@import '../base/var';
+
+.header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: $h-top;
+
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+  .title {
+    line-height: $h-top;
+
+    margin: 0;
+
+    text-align: center;
+    .ico-logo {
+      vertical-align: -16px;
+    }
+  }
+}

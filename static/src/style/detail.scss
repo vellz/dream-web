@@ -1,0 +1,156 @@
+@import 'base/common';
+@import 'mod/ico';
+@import 'mod/header';
+@import 'mod/footer';
+
+body {
+  margin: 0;
+}
+.header {
+  display: none;
+}
+.footer {
+  display: none;
+}
+.container-fluid {
+  padding: 0;
+
+  background: url(../img/tmp/bg.jpg) no-repeat top center;
+  background-size: 100%;
+}
+.order {
+  margin: 15px;
+}
+.dream {
+  display: flex;
+
+  margin: 80px 15px 15px;
+
+  color: #fff;
+
+  align-items: flex-end;
+  .avatar {
+    width: 64px;
+    img {
+      width: 60px;
+      height: 60px;
+
+      border: 2px solid #333;
+      border-radius: 100%;
+    }
+  }
+  .content {
+    flex: 1;
+  }
+  .promise {
+    width: 80px;
+
+    text-align: right;
+  }
+}
+.main {
+  padding: 15px;
+
+  background: #efefef;
+}
+.detail {
+  padding: 10px;
+
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+  p {
+    margin: 0;
+    padding: 8px 0;
+
+    border-bottom: 1px solid #ddd;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+.guess {
+  padding: 10px 0;
+
+  border-bottom: 1px solid #ddd;
+  label {
+    margin-right: 10px;
+  }
+}
+.supervision {
+  padding: 10px 0;
+
+  border-bottom: 1px solid #ddd;
+  .sm-avatar {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+
+    border: 1px solid #333;
+    border-radius: 100%;
+  }
+}
+.prove {
+  display: flex;
+
+  padding: 15px 0;
+  .time {
+    font-size: 150%;
+    font-weight: bolder;
+    line-height: 1;
+
+    width: 80px;
+    padding-right: 15px;
+
+    text-align: right;
+  }
+  .content {
+    flex: 1;
+    img {
+      display: block;
+
+      width: 160px;
+    }
+    .bottom {
+      font-size: 85%;
+
+      text-align: right;
+
+      color: #888;
+      .act {
+        display: inline-block;
+
+        width: 50px;
+        margin-left: 10px;
+
+        text-align: left;
+        .ext {
+          color: #888;
+        }
+        &:last-child {
+          width: 60px;
+        }
+        &.ed {
+          color: #eb452f;
+          .glyphicon {
+            animation: scaleBig 1s;
+          }
+        }
+        @keyframes scaleBig {
+          0% {
+            transform: scale(1);
+          }
+          25% {
+            transform: scale(2);
+          }
+          75% {
+            transform: scale(2);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+}

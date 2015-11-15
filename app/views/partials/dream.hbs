@@ -1,0 +1,25 @@
+<div class="dream">
+	<div class="bg">
+		<img src="{{img}}" class="img-responsive"/>
+	</div>
+	<div class="cnt text-right">
+		<h3 class="title">{{title}}</h3>
+		<p class="promise">梦想启动金：￥{{startWith}}</p>
+		<div class="user">
+			<div class="avatar">
+				<img src="{{user.avatar}}"/>
+			</div>
+			<div class="cases">
+				<label>成功：{{success}}</label>
+				<label>失败：{{fail}}</label>
+			</div>
+		</div>
+	</div>
+	<div class="going">
+		<div class="bar">
+			<div class="done" style="width: {{percent done all}}"></div>
+		</div>
+		<p class="text-center">已完成{{done}}天，有{{supervision}}人监督</p>
+	</div>
+	<a href="/detail" class="lnk"></a>
+</div>

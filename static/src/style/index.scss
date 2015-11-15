@@ -1,0 +1,49 @@
+@import 'base/common';
+@import 'mod/ico';
+@import 'mod/header';
+@import 'mod/footer';
+@import 'mod/dream';
+
+.container-fluid {
+  padding: 0;
+}
+.loading {
+  font-size: 12px;
+  line-height: 20px;
+
+  visibility: hidden;
+
+  padding: 5px 0 20px;
+
+  text-align: center;
+  img {
+    width: 20px;
+    margin-right: 10px;
+  }
+}
+#add {
+  font-size: 20px;
+  line-height: 44px;
+
+  position: fixed;
+  z-index: 9;
+  right: 10px;
+  bottom: 80px;
+
+  width: 40px;
+  height: 40px;
+
+  text-align: center;
+
+  color: #fff;
+  border-radius: 100%;
+  background: #22b72b;
+}
+.modal-add .main {
+  width: 90%;
+  h4 {
+    margin-top: 0;
+
+    text-align: center;
+  }
+}

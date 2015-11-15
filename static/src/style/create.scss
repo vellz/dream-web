@@ -1,0 +1,73 @@
+@import 'base/common';
+@import 'mod/ico';
+@import 'mod/header';
+@import 'mod/footer';
+
+.steps {
+  display: flex;
+
+  padding: 25px 0;
+  .one,
+  .two,
+  .three {
+    position: relative;
+
+    text-align: center;
+
+    flex: 1;
+    &::after {
+      position: absolute;
+      z-index: -1;
+      top: 25px;
+      right: 0;
+      left: 0;
+
+      height: 1px;
+
+      content: '';
+
+      background: #d9edf7;
+    }
+  }
+  .active .o {
+    color: #fff;
+    background: #337ab7;
+  }
+  .one::after {
+    left: auto;
+
+    width: 50%;
+  }
+  .three::after {
+    right: auto;
+    left: 0;
+
+    width: 50%;
+  }
+  .o {
+    font-style: normal;
+    line-height: 50px;
+
+    display: block;
+
+    width: 50px;
+    height: 50px;
+    margin: auto;
+
+    border-radius: 100%;
+  }
+}
+.step2,
+.step3 {
+  display: none;
+}
+.form-control-short {
+  display: inline-block;
+
+  width: 30%;
+}
+textarea {
+  height: 80px !important;
+
+  resize: none;
+}

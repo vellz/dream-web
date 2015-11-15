@@ -1,0 +1,17 @@
+<div class="prove">
+	<div class="time">{{time}}</div>
+	<div class="content">
+		<p><img src="{{img}}">{{text}}</p>
+		<div class="bottom">
+			<div class="act j-inter-act {{#if liked}}ed{{/if}}">
+				<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> <span class="ext">赞 <var>{{#when like '>' 0}}{{like}}{{/when}}</var></span>
+			</div>
+			<div class="act j-inter-act {{#if unliked}}ed{{/if}}">
+				<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> <span class="ext">踩 <var>{{#when unlike '>' 0}}{{unlike}}{{/when}}</var>
+			</div>
+			<div class="act j-inter-act {{#if notified}}ed{{/if}}">
+				<span class="glyphicon glyphicon-bell" aria-hidden="true"></span> <span class="ext">提醒 <var>{{#when notify '>' 0}}{{notify}}{{/when}}</var>
+			</div>
+		</div>
+	</div>
+</div>

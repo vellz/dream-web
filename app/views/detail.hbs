@@ -1,0 +1,47 @@
+{{> start title='梦想' style='/css/detail.css'}}
+<div class="container-fluid">
+	<div class="order">
+		<span class="no">订单编号：2394000888</span>
+		<a href="/create" class="btn btn-xs btn-success">我也要下订单</a>
+	</div>
+	<div class="dream">
+		<div class="avatar">
+			<img src="/img/example/avatar.jpg" class="img-responsive">
+		</div>
+		<div class="content">
+			<h5>某某的梦想订单</h5>
+			<h4>30天坚持跑步</h4>
+		</div>
+		<div class="promise">
+			<h4>￥200</h4>
+			<h5>已坚持10天</h5>
+		</div>
+	</div>
+	<div class="main">
+		<div class="detail">
+			<p><strong>梦想宣言</strong>：坚持每天锻炼，30天后减掉5公斤。</p>
+			<p><strong>成功承诺</strong>：1、如果成功执行此次计划，将给每一位监督的朋友发红包；
+				2、奖励自己一件漂亮衣服</p>
+			<p><strong>失败承诺</strong>：1、如果少做一次，支付5元梦想基金；2、少做三次，就算失败。</p>
+		</div>
+		<div class="guess">
+			<div class="checkbox">
+				<strong>我来预言</strong>：
+			 	<label><input type="checkbox" name="guess-success"> 成功</label>
+			 	<label><input type="checkbox" name="guess-fail"> 失败</label>
+			</div>
+		 	<small>6人预言你会成功 8人预言你会失败  加油吧~~！！</small>
+		</div>
+		<div class="supervision">
+			<strong>我来监督</strong>：
+			<img src="/img/example/avatar.jpg" class="sm-avatar"><img src="/img/example/avatar.jpg" class="sm-avatar"><img src="/img/example/avatar.jpg" class="sm-avatar"><img src="/img/example/avatar.jpg" class="sm-avatar">
+			<a href="javascript:;" class="btn btn-success btn-xs">加入监督</a>
+		</div>
+		<div class="proves" id="proves">
+			{{> prove time="昨天" img="/img/example/item1.jpg" text="" like=6 liked=true unlike=0 unliked=false notify=2 notified=false}}
+			{{> prove time="11-13" img="/img/example/item2.jpg" text="跑的好累" like=23 liked=true unlike=2 unliked=false notify=4 notified=true}}
+			{{> prove time="11-12" img="/img/example/item3.jpg" text="第一天，come on" like=35 liked=true unlike=0 unliked=false notify=0 notified=false}}
+		</div>
+	</div>
+</div>
+{{> end tab='detail' script="/js/detail.js"}}

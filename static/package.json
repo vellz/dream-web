@@ -1,0 +1,12 @@
+{
+  "name": "fbi-template-default",
+  "version": "1.2.3",
+  "description": "fbi-template-default for fbi",
+  "author": "Inman <neikvon@icloud.com>",
+  "license": "MIT",
+  "keywords": [
+    "fbi"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}

@@ -1,0 +1,94 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "template": "default",
+  "author": "inman",
+  "meta": {
+    "src": "src",
+    "dist": "dist",
+    "tmp": ".tmp",
+    "zip": "zip",
+    "gzip": "gzip",
+    "css": {
+      "src": "style",
+      "dist": "css"
+    },
+    "img": {
+      "src": "image",
+      "dist": "img"
+    },
+    "js": {
+      "src": "script",
+      "dist": "js"
+    },
+    "html": {
+      "src": "template",
+      "dist": "html"
+    },
+    "vendor": {
+      "src": "vendor",
+      "dist": "lib",
+      "flat": false
+    },
+    "extra": {
+      "src": "extra",
+      "dist": ""
+    },
+    "zip_src": {
+      "static": "css, img, js, vendor",
+      "html": "html",
+      "flat": false
+    },
+    "nginx": {
+      "src": "dist",
+      "dist": ""
+    }
+  },
+  "vars": {
+    "dev": {
+      "staticRoot": "..",
+      "htmlRoot": "..",
+      "apiRoot": "http://localhost:3000"
+    },
+    "prod": {
+      "staticRoot": "..",
+      "htmlRoot": "http://html.yoursite.com",
+      "apiRoot": "http://api.yoursite.com"
+    },
+    "pattens": {
+      "start": "{{",
+      "end": "}}"
+    }
+  },
+  "hashVersion": false,
+  "htmlmin": true,
+  "imgSuffix": "jpg,png,gif,svg",
+  "browserSync": {
+    "server": {
+      "baseDir": "dist",
+      "index": "html/index.html"
+    },
+    "port": 9003,
+    "open": false,
+    "notify": false
+  },
+  "webpack": true,
+  "webpack_entryId": ".webpack",
+  "webpack_ingore": [
+    "script/lib/jquery.min.js",
+    "script/suitable.js",
+    "fonts/*"
+  ],
+  "webpack_loaders": {
+    "handlebars-loader": "*",
+    "babel-core": "*"
+  },
+  "vendor": {},
+  "ftp": {
+    "host": "",
+    "user": "",
+    "pass": "",
+    "remotePath": ""
+  },
+  "editor": "sublime text"
+}

@@ -1,0 +1,48 @@
+@import '../base/var';
+
+.footer {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  background: #fff;
+  ol {
+    display: flex;
+
+    height: 100%;
+    height: $h-bottom;
+
+    border-top: 1px solid #ddd;
+
+    align-items: center;
+    li {
+      position: relative;
+
+      flex: 1;
+      &.active .glyphicon {
+        color: #eb452f;
+      }
+    }
+    .lnk-block {
+      font-size: 13px;
+
+      display: block;
+
+      text-align: center;
+      text-decoration: none;
+
+      color: inherit;
+      .glyphicon {
+        font-size: 24px;
+      }
+      span {
+        display: block;
+
+        margin-top: 5px;
+      }
+    }
+  }
+}

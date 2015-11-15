@@ -1,0 +1,12 @@
+{{> start title='首页' style='/css/index.css'}}
+<div class="container-fluid" id="dreams">
+	{{#each list}}
+		{{> dream}}
+	{{/each}}
+</div>
+<div id="add"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></div>
+<div class="loading">
+	<img src="loading.gif"/>
+	正在努力加载中...
+</div>
+{{> end tab='home' script="/js/index.js"}}

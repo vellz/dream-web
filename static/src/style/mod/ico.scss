@@ -1,0 +1,42 @@
+.ico {
+  display: inline-block;
+
+  vertical-align: middle;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.ico-logo {
+  width: 54px;
+  height: 54px;
+
+  background-image: url(../img/logo108.png);
+}
+.ico-home {
+  width: 25px;
+  height: 23px;
+
+  background-image: url(../img/ico-home.png);
+}
+.active .ico-home {
+  background-image: url(../img/ico-home-active.png);
+}
+.ico-create {
+  width: 24px;
+  height: 18px;
+
+  background-image: url(../img/ico-create-active.png);
+}
+.active .ico-create {
+  background-image: url(..img/ico-create-active.png);
+}
+.ico-mine {
+  width: 18px;
+  height: 22px;
+
+  background-image: url(../img/ico-mine.png);
+}
+.active .ico-mine {
+  background-image: url(../img/ico-mine-active.png);
+}
